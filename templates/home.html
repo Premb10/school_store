@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %} <!-- Add this line to load the static tag -->
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center">
+        <h1>Welcome to the Student Management System</h1>
+        <img src="{% static 'images/student-management-banner-1920x1080-1-1024x576.png' %}" alt="Welcome Image" class="img-fluid mt-4">
+        <a href="{% url 'login' %}" class="btn btn-primary mt-4">Login</a>
+    </div>
+</div>
+{% endblock %}

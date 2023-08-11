@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Confirmation{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <h1>Confirmation Page</h1>
+    <p>{{ message }}</p>
+    <a href="{% url 'home' %}" class="btn btn-primary mt-3">Return to Home</a>
+</div>
+{% endblock %}

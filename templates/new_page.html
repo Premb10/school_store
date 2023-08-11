@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}New Page{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <h1>Welcome to the New Page</h1>
+    <p>This is the content of the new page.</p>
+    <a href="{% url 'form' %}" class="btn btn-primary mt-3">Go to Form</a>
+</div>
+{% endblock %}
